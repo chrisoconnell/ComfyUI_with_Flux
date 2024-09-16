@@ -41,6 +41,7 @@ RUN git clone https://github.com/comfyanonymous/ComfyUI.git && \
     cd /ComfyUI && \
     mkdir pysssss-workflows
 
+COPY --chmod=755 controlnet.json /ComfyUI/pysssss-workflows/controlnet.json
 COPY --chmod=755 txt2img.json /ComfyUI/pysssss-workflows/txt2img.json
 COPY --chmod=755 img2img.json /ComfyUI/pysssss-workflows/img2img.json
 COPY --chmod=755 LoRa.json /ComfyUI/pysssss-workflows/LoRa.json
